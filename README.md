@@ -208,6 +208,13 @@ console.log( out );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/bifurcate`][@stdlib/utils/bifurcate]: split values into two groups.
+-   [`@stdlib/utils/group-by`][@stdlib/utils/group-by]: group values according to an indicator function.
+
 </section>
 
 <!-- /.related -->
@@ -274,6 +281,14 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
 [mdn-object]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+<!-- <related-links> -->
+
+[@stdlib/utils/bifurcate]: https://github.com/stdlib-js/utils-bifurcate
+
+[@stdlib/utils/group-by]: https://github.com/stdlib-js/utils-group-by
+
+<!-- </related-links> -->
 
 </section>
 
