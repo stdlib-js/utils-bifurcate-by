@@ -20,7 +20,7 @@ limitations under the License.
 
 # bifurcateBy
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Split values into two groups according to a predicate function.
 
@@ -212,8 +212,8 @@ console.log( out );
 
 ## See Also
 
--   [`@stdlib/utils/bifurcate`][@stdlib/utils/bifurcate]: split values into two groups.
--   [`@stdlib/utils/group-by`][@stdlib/utils/group-by]: group values according to an indicator function.
+-   <span class="package-name">[`@stdlib/utils/bifurcate`][@stdlib/utils/bifurcate]</span><span class="delimiter">: </span><span class="description">split values into two groups.</span>
+-   <span class="package-name">[`@stdlib/utils/group-by`][@stdlib/utils/group-by]</span><span class="delimiter">: </span><span class="description">group values according to an indicator function.</span>
 
 </section>
 
@@ -264,8 +264,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/utils-bifurcate-by/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/utils-bifurcate-by?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/utils-bifurcate-by.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/utils-bifurcate-by/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
