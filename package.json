@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-bifurcate-by",
-  "version": "0.0.8",
+  "version": "0.0.0",
   "description": "Split values into two groups according to a predicate function.",
   "license": "Apache-2.0",
   "author": {
@@ -41,6 +41,7 @@
     "@stdlib/assert-is-collection": "^0.0.x",
     "@stdlib/assert-is-function": "^0.0.x",
     "@stdlib/assert-is-plain-object": "^0.0.x",
+    "@stdlib/string-format": "^0.0.x",
     "@stdlib/types": "^0.0.x",
     "@stdlib/utils-index-of": "^0.0.x"
   },
