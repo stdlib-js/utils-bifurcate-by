@@ -34,38 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-bifurcate-by
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-bifurcateBy = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-bifurcate-by@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var bifurcateBy = require( 'path/to/vendor/umd/utils-bifurcate-by/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-bifurcate-by@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.bifurcateBy;
-})();
-</script>
+var bifurcateBy = require( '@stdlib/utils-bifurcate-by' );
 ```
 
 #### bifurcateBy( collection, \[options,] predicate )
@@ -179,15 +171,10 @@ console.log( context.count );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-bifurcate-by@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var floor = require( '@stdlib/math-base-special-floor' );
+var bifurcateBy = require( '@stdlib/utils-bifurcate-by' );
 
 var vals;
 var arr;
@@ -211,11 +198,6 @@ function predicate( v ) {
 // Compute the groups:
 out = bifurcateBy( arr, predicate );
 console.log( out );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -298,7 +280,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -322,9 +304,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/bifurcate]: https://github.com/stdlib-js/utils-bifurcate/tree/umd
+[@stdlib/utils/bifurcate]: https://github.com/stdlib-js/utils-bifurcate
 
-[@stdlib/utils/group-by]: https://github.com/stdlib-js/utils-group-by/tree/umd
+[@stdlib/utils/group-by]: https://github.com/stdlib-js/utils-group-by
 
 <!-- </related-links> -->
 
