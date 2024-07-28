@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import bifurcateBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-bifurcate-by@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-bifurcate-by/tags). For example,
+
+```javascript
 import bifurcateBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-bifurcate-by@v0.2.2-deno/mod.js';
 ```
 
@@ -169,7 +174,7 @@ console.log( context.count );
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@deno/mod.js';
-import bifurcateBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-bifurcate-by@v0.2.2-deno/mod.js';
+import bifurcateBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-bifurcate-by@deno/mod.js';
 
 var vals;
 var arr;
