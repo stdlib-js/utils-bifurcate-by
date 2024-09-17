@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-bifurcate-by
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import bifurcateBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-bifurcate-by@deno/mod.js';
+var bifurcateBy = require( '@stdlib/utils-bifurcate-by' );
 ```
 
 #### bifurcateBy( collection, \[options,] predicate )
@@ -71,8 +89,8 @@ var out = bifurcateBy( arr, predicate );
 
 A `predicate` function is provided two arguments:
 
--   `value`: collection element
--   `index`: collection index
+-   **value**: collection element.
+-   **index**: collection index.
 
 ```javascript
 function predicate( v, i ) {
@@ -87,8 +105,8 @@ var out = bifurcateBy( arr, predicate );
 
 The function accepts the following `options`:
 
--   `returns`: specifies the output format. If the option equals `'values'`, the function outputs element values. If the option equals `'indices'`, the function outputs element indices. If the option equals `'*'`, the function outputs both element indices and values. Default: `'values'`.
--   `thisArg`: execution context.
+-   **returns**: specifies the output format. If the option equals `'values'`, the function outputs element values. If the option equals `'indices'`, the function outputs element indices. If the option equals `'*'`, the function outputs both element indices and values. Default: `'values'`.
+-   **thisArg**: execution context.
 
 By default, the function returns element values. To return element indices, set the `returns` option to `'indices'`.
 
@@ -167,9 +185,9 @@ console.log( context.count );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import floor from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-floor@deno/mod.js';
-import bifurcateBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-bifurcate-by@deno/mod.js';
+var randu = require( '@stdlib/random-base-randu' );
+var floor = require( '@stdlib/math-base-special-floor' );
+var bifurcateBy = require( '@stdlib/utils-bifurcate-by' );
 
 var vals;
 var arr;
@@ -231,7 +249,7 @@ console.log( out );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -302,9 +320,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/bifurcate]: https://github.com/stdlib-js/utils-bifurcate/tree/deno
+[@stdlib/utils/bifurcate]: https://github.com/stdlib-js/utils-bifurcate
 
-[@stdlib/utils/group-by]: https://github.com/stdlib-js/utils-group-by/tree/deno
+[@stdlib/utils/group-by]: https://github.com/stdlib-js/utils-group-by
 
 <!-- </related-links> -->
 
