@@ -1,4 +1,4 @@
-"use strict";var f=function(e,t){return function(){return t||e((t={exports:{}}).exports,t),t.exports}};var c=f(function(H,g){
+"use strict";var f=function(e,t){return function(){try{return t||e((t={exports:{}}).exports,t),t.exports}catch(v){throw (t=0, v)}};};var c=f(function(H,g){
 var O=require('@stdlib/assert-is-plain-object/dist'),l=require('@stdlib/assert-has-own-property/dist'),B=require('@stdlib/utils-index-of/dist'),h=require('@stdlib/error-tools-fmtprodmsg/dist'),o=["values","indices","*"];function E(e,t){return O(t)?(l(t,"thisArg")&&(e.thisArg=t.thisArg),l(t,"returns")&&(e.returns=t.returns,B(o,e.returns)===-1)?new TypeError(h('1Rt4S',"returns",o.join('", "'),e.returns)):null):new TypeError(h('1Rt2V',t));}g.exports=E
 });var m=f(function(J,b){
 function T(e,t,v){var i,n,r,s,u,a;if(i=t.thisArg,s=e.length,s===0)return[];for(r=[[],[]],a=0;a<s;a++)u=e[a],n=v.call(i,u,a),n?r[0].push(u):r[1].push(u);return r}b.exports=T
